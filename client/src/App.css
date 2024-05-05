@@ -1,0 +1,176 @@
+
+
+/* Home Page CSS for buttons */
+.button-link1 {
+  position: relative; /* add position relative to make the overlay absolute */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.button-link1::before {
+  /* add a pseudo-element to create the overlay */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1; /* set a higher z-index than the button text */
+  border-radius: 5px;
+}
+
+.button-link1 span {
+  /* wrap the button text in a span for better control */
+  position: relative; /* add position relative to bring it above the overlay */
+  z-index: 2; /* set a higher z-index than the overlay */
+  color: white;
+  font-size: 24px;
+  padding: 0; /* decrease top padding to move text upwards */
+  top: -10px; /* adjust top position to position text correctly */
+}
+
+
+
+.button-link6 {
+  position: relative; /* add position relative to make the overlay absolute */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1630839437035-dac17da580d0?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button-link6::before {
+  /* add a pseudo-element to create the overlay */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1; /* set a higher z-index than the button text */
+  border-radius: 5px;
+}
+
+.button-link6 span {
+  /* wrap the button text in a span for better control */
+  position: relative; /* add position relative to bring it above the overlay */
+  z-index: 2; /* set a higher z-index than the overlay */
+  color: white;
+  font-size: 24px;
+  padding: 0; /* decrease top padding to move text upwards */
+  top: -10px; /* adjust top position to position text correctly */
+}
+
+.button-link:hover {
+  opacity: 0.8;
+}
+
+
+/* Home Page CSS for buttons */
+
+
+/* Body content */
+
+body {
+  background-color: #FFF; 
+  background-image: linear-gradient(to right, #401F71 , #5BBCFF);
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat;
+}
+/* Body content */
+
+
+/* Pages */
+
+.grid{
+  display: grid;
+}
+
+.grid--2-cols{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap{
+  gap: 20px;
+}
+
+.container {
+  /* display: flex; */
+  align-items: center; 
+  /* width: 700px; */
+  /* margin-top: 20px; */
+}
+
+.card-style{
+  width: 700px; 
+  margin-top: 20px;
+}
+
+.text-container {
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+h1{
+  margin-bottom: 40px;
+}
+
+.background{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px 10px;
+}
+
+.white-text{
+  color: #fff;
+}
+
+.btn-blue{
+  background-color: #03045E;
+  color: white;
+}
+
+.back{
+  background-color: #fff;
+  padding: 20px;
+  align-items: center;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.btn-sm{
+  padding: 5px;
+  font-size: 10px;
+}
